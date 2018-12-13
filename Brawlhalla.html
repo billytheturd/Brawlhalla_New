@@ -4,19 +4,47 @@
   <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <img src="BrawlBanner.jpg" id="banner"/>
 
-  <title>Patker is Dumb</title>
+  <title>BrawlBallerBois</title>
   </head>
 
   <body>
     <div id="wrapper">
-        <h1>Patker is Dumb</h1>
-        <p>How Dumb is Patker Soxton?</p>
+        <a href="https://www.youtube.com/user/Brawlhalla" style="font-size: 100px;">Latest BrawlBaller News</a>
+        <div style="font-size: 100px">World Champion: Sandstorm</div>
+        <div>
+          <div id="commentWrapper"></div>
+
+        </div>
         <div class="button" id="pButton">See Patker in Brawlhalla</div>
         <div class="button" id="gifButton">Brawlhalla Gifs</div>
-        <img src="PPS.png" width="400"/>
-        <img src="patker.png" width="400" id="Pakter"/>
-      <script src="javascript.js"></script>
+        <div class="button" id="WUT">WUT</div>
+        <div class="imgWrapper">
+        <img src="PPS.png"/>
+        <img src="Patker.png" height="600px" class="hidden" id="Patker"/>
+        </div>
+        <img src="Brawl1.gif" height="1000px" width="1800px" class= "hidden" id="Brawl1"/>
+        <div class="imgWrapper">
+        <img src="GameBroken.gif" height="600px" width="900px"class="hidden" id="GameBroken"/>
+        <img src="IQ.gif" height="600px" width="900px" class="hidden" id="IQ"/>
+      </div>
     </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDll2Jm846TWh2oAm2rOuWO-_8O27JIHH0",
+    authDomain: "brawlballer-website.firebaseapp.com",
+    databaseURL: "https://brawlballer-website.firebaseio.com",
+    projectId: "brawlballer-website",
+    storageBucket: "brawlballer-website.appspot.com",
+    messagingSenderId: "904267789479"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>
