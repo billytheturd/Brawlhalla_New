@@ -8,7 +8,7 @@ const button2 = $("#WUT");
 const db = firebase.firestore();
 
 db.settings({
-  timestampsInSnapshots: true;
+  timestampsInSnapshots: true
 })
 
 brawl1.hide();
