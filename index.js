@@ -5,7 +5,7 @@ const app = express();
 const server = http.Server(app);
 
 
-app.get("/", (req, res) 0=> {
+app.get("/", (req, res) => {
   res.sendFile(path.resolve("Brawlhalla.html"));
 })
 app.use(express.static("static"));
