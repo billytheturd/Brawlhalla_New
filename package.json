@@ -1,0 +1,17 @@
+{
+  "name": "BrawlerBois",
+  "version": "1.0.0",
+  "description": "It be Brawlhalla",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Better than Patker",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.3",
+    "http": "0.0.0",
+    "path": "^0.12.7"
+  },
+
+}
