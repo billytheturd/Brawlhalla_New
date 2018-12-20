@@ -1,10 +1,10 @@
-const brawl1 = $("#Brawl1");
-const button = $("#gifButton");
-const patker = $("#Patker");
-const button1 = $("#pButton");
-const gameBroken = $("#GameBroken");
-const iQ = $("#IQ");
-const button2 = $("#WUT");
+const brawl1 = jquery("#Brawl1");
+const button = jquery("#gifButton");
+const patker = jquery("#Patker");
+const button1 = jquery("#pButton");
+const gameBroken = jquery("#GameBroken");
+const iQ = jquery("#IQ");
+const button2 = jquery("#WUT");
 //const db = firebase.firestore();
 
 //db.settings({
@@ -19,7 +19,7 @@ const button2 = $("#WUT");
 // function getComments(){
 //   db.collection("comments").get().then(snapshot => {
 //     snapshot.docs.forEach((docs, index) => {
-//       $("#commentWapper").append(docs);
+//       jquery("#commentWapper").append(docs);
 //     })
 //   })
 // }
