@@ -1,10 +1,10 @@
-const brawl1 = jquery("#Brawl1");
-const button = jquery("#gifButton");
-const patker = jquery("#Patker");
-const button1 = jquery("#pButton");
-const gameBroken = jquery("#GameBroken");
-const iQ = jquery("#IQ");
-const button2 = jquery("#WUT");
+const brawl1 = jQuery("#Brawl1");
+const button = jQuery("#gifButton");
+const patker = jQuery("#Patker");
+const button1 = jQuery("#pButton");
+const gameBroken = jQuery("#GameBroken");
+const iQ = jQuery("#IQ");
+const button2 = jQuery("#WUT");
 // const db = firebase.firestore();
 //
 // db.settings({
