@@ -5,24 +5,24 @@ const button1 = $("#pButton");
 const gameBroken = $("#GameBroken");
 const iQ = $("#IQ");
 const button2 = $("#WUT");
-const db = firebase.firestore();
+//const db = firebase.firestore();
 
-db.settings({
-  timestampsInSnapshots: true
-})
+//db.settings({
+//   timestampsInSnapshots: true
+// })
+//
+// brawl1.hide();
+// patker.hide();
+// gameBroken.hide();
+// iQ.hide();
 
-brawl1.hide();
-patker.hide();
-gameBroken.hide();
-iQ.hide();
-
-function getComments(){
-  db.collection("comments").get().then(snapshot => {
-    snapshot.docs.forEach((docs, index) => {
-      $("#commentWapper").append(docs);
-    })
-  })
-}
+// function getComments(){
+//   db.collection("comments").get().then(snapshot => {
+//     snapshot.docs.forEach((docs, index) => {
+//       $("#commentWapper").append(docs);
+//     })
+//   })
+// }
 
 button.click(function(){
   // brawl1.animate({"width":"1800px", "height" :"1000px", "opacity": "1"})
