@@ -1,28 +1,28 @@
-const brawl1 = $("#Brawl1");
-const button = $("#gifButton");
-const patker = $("#Patker");
-const button1 = $("#pButton");
-const gameBroken = $("#GameBroken");
-const iQ = $("#IQ");
-const button2 = $("#WUT");
-const db = firebase.firestore();
-
-db.settings({
-  timestampsInSnapshots: true
-})
-
-brawl1.hide();
-patker.hide();
-gameBroken.hide();
-iQ.hide();
-
-function getComments(){
-  db.collection("comments").get().then(snapshot => {
-    snapshot.docs.forEach((docs, index) => {
-      $("#commentWapper").append(docs);
-    })
-  })
-}
+const brawl1 = jquery("#Brawl1");
+const button = jquery("#gifButton");
+const patker = jquery("#Patker");
+const button1 = jquery("#pButton");
+const gameBroken = jquery("#GameBroken");
+const iQ = jquery("#IQ");
+const button2 = jquery("#WUT");
+// const db = firebase.firestore();
+//
+// db.settings({
+//   timestampsInSnapshots: true
+// })
+//
+// brawl1.hide();
+// patker.hide();
+// gameBroken.hide();
+// iQ.hide();
+//
+// function getComments(){
+//   db.collection("comments").get().then(snapshot => {
+//     snapshot.docs.forEach((docs, index) => {
+//       $("#commentWapper").append(docs);
+//     })
+//   })
+// }
 
 button.click(function(){
   // brawl1.animate({"width":"1800px", "height" :"1000px", "opacity": "1"})
