@@ -32,6 +32,15 @@ body{
   flex-direction: column;
 }
 
+.comment{
+  padding: 1rem;
+  border: .1rem solid black;
+}
+
+.comment > h1{
+  size: 8rem;
+  font-family: "Comic Sans MS";
+}
 /* .hidden {
   width: 0px;
   height: 0px;
