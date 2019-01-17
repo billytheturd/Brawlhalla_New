@@ -22,12 +22,12 @@ commentSubmit.click(() => {
 db.settings({
   timestampsInSnapshots: true
 })
-//
-// brawl1.hide();
-// patker.hide();
-// gameBroken.hide();
-// iQ.hide();
-//
+
+brawl1.hide();
+patker.hide();
+gameBroken.hide();
+iQ.hide();
+
 function genComment(message){
   return `
   <div class="comment"><h1>${message}</h1></div>
