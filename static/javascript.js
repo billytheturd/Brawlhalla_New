@@ -34,6 +34,10 @@ function genComment(message){
   `
 }
 
+$("#closeDiv").click(()=> {
+  $("#comments").toggleClass("closed");
+})
+
 function getComments(){
   db.collection("comments").get().then(snapshot => {
     snapshot.docs.forEach((doc, index) => {
