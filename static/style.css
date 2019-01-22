@@ -33,7 +33,7 @@ body{
 }
 
 #comments{
-  position:fixed;
+  position:absolute;
   flex-direction: column;
   width: 20rem;
   height: 100%;

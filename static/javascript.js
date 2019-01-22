@@ -8,6 +8,7 @@ const button2 = jQuery("#WUT");
 const db = firebase.firestore();
 const commentIn = $("#commentIn");
 const commentSubmit = $("#commentSubmit");
+const commentClear = $("#clearComments")
 
 function submitComment(message){
   db.collection("comments").add({
@@ -46,7 +47,27 @@ function getComments(){
     })
   })
 }
-getComments();
+//getComments();
+
+
+  db.collection("comments").onSnapshot(snapshot =>{
+    snapshot.docChanges().forEach(change =>{
+      $("#commentWrapper").prepend(genComment(change.doc.data().comment));
+    })
+  })
+
+function clearComments(){
+  db.collection("comments").get().then(snapshot =>{
+    snapshot.docs.forEach(doc =>{
+      db.collection("comments").doc(doc.id).delete();
+    })
+    location.href=location.href
+  })
+}
+
+commentClear.click(() => {
+  clearComments();
+})
 
 button.click(function(){
   // brawl1.animate({"width":"1800px", "height" :"1000px", "opacity": "1"})
