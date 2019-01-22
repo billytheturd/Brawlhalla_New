@@ -80,6 +80,7 @@ body{
   border: .1rem solid black;
   margin: .5rem;
   background-color: white;
+  word-wrap: break-word;
 }
 
 .comment > h1{
