@@ -32,15 +32,20 @@ body{
   flex-direction: column;
 }
 
+#commentWrapper{
+  max-height: 100%;
+  overflow-y: auto;
+}
+
 #comments{
   position: fixed;
   flex-direction: column;
-  width: 20rem;
+  width: 55rem;
   height: 100%;
   right: 0px;
   top: 0px;
   padding: 2rem;
-  transition: all .7s;
+  transition: all 1.3s;
   margin-right: 0px;
   background-color: grey;
 }
@@ -52,14 +57,14 @@ body{
 }
 
 .closed{
-  margin-right: -30rem !important;
-  transition: all .7s !important;
+  margin-right: -60rem !important;
+  transition: all 1.3s !important;
 }
 
 .closed>#closeDiv{
   position: absolute;
-  margin-left: -9rem !important;
-  transition: all 1.7s;
+  margin-left: -4rem !important;
+  transition: all 1s;
 }
 
 #closeDiv{

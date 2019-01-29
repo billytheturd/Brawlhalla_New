@@ -18,6 +18,7 @@ function submitComment(message){
 
 commentSubmit.click(() => {
   submitComment(commentIn.val());
+  commentIn.val("");
 })
 
 db.settings({
